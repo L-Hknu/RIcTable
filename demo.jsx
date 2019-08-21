@@ -14,7 +14,7 @@ export default  class Manager  extends Component {
                     {align:'center',title:'我的天',dataIndex:'name'},
                 ],
                 field:[
-                    {type:'Cascader'}
+                    {type:'Select'}
                 ],
                 button:[
                     {type:'primary',
@@ -28,8 +28,9 @@ export default  class Manager  extends Component {
             }
         };
     }
+
     render() {
-   
+        
         return (
             <div > 
 

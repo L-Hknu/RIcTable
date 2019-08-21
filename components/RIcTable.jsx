@@ -62,9 +62,7 @@ export default class RIcTable extends Component {
             }}
           >
             {this.props.tableData.field.map(val=>{
-                if (val.type==='Cascader') {
-                   return <Field className='area' label="区域入口：" name="area" component={Cascader} placeholder="请输入名字" />
-                }else if(val.type==='select'){
+                if (val.type==='Select') {
                    return <Field label="一级入口：" size="small" name={val.type} component={Select} placeholder="请选择" >
                             {
                                 val.data.map(val => {
@@ -72,7 +70,6 @@ export default class RIcTable extends Component {
                                 })
                             }
                     </Field>
-
                 }
             })}
             <Field className="submit" layout={
