@@ -1,6 +1,10 @@
 基于飞冰编写的表单组件
+
+
 RIcTable组件传入参数tableData
+
 参数结构
+
 {
     queryUrl:'' 请求接口，
     button:[        类型Array
